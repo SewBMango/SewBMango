@@ -54,7 +54,8 @@ Tabs.TabShop:AddButton({
 Tabs.TabShop:AddButton({
     Title = "Dragon Breath",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1","2")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
     end
 })
 
@@ -75,6 +76,7 @@ Tabs.TabShop:AddButton({
 Tabs.TabShop:AddButton({
     Title = "Sharkman Karate",
     Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
     end
 })
