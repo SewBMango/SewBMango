@@ -148,27 +148,6 @@ Tabs.TabTeleport:AddParagraph({
     Content = "Teleport World"
 })
 
-Tabs.TabTeleport:AddButton({
-    Title = "Old World",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
-    end
-})
-
-Tabs.TabTeleport:AddButton({
-    Title = "New World",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
-    end
-})
-
-Tabs.TabTeleport:AddButton({
-    Title = "Third World",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
-    end
-})
-
 local TradeBone = Tabs.TabMisc:AddToggle("TradeBone", {Title = "Trade Bone", Default = false})
    TradeBone:OnChanged(function(value)
         _G.RandomBoneFunction = value
