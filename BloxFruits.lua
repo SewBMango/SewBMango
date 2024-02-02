@@ -54,7 +54,7 @@ Tabs.TabShop:AddButton({
 Tabs.TabShop:AddButton({
     Title = "Dragon Breath",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonBreath")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1","2")
     end
 })
 
