@@ -16,7 +16,7 @@ local Tabs = {
     TabShop = Window:AddTab({ Title = "Tab Shop", Icon = "" }),
     TabFarm = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
     TabMisc = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
-    TabTeleport = Window:AddTab({ Title = "Tab Teleport", Icon + "" }),
+    TabTeleport = Window:AddTab({ Title = "Tab Teleport", Icon = "" }),
 }
 
 local Options = Fluent.Options
