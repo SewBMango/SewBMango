@@ -143,7 +143,7 @@ Tabs.TabShop:AddButton({
     end
 })
 
-Tab.TabTeleport:AddParagraph({
+Tabs.TabTeleport:AddParagraph({
     Title = "Teleport World",
     Content = "Teleport World"
 })
