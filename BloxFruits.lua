@@ -96,14 +96,14 @@ Tabs.TabShop:AddButton({
 Tabs.TabShop:AddButton({
     Title = "God Human",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodHuman")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
     end
 })
 
 Tabs.TabShop:AddButton({
     Title = "Sanguine Art",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineAre")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySanguineArt")
     end
 })
 
