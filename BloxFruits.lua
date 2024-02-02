@@ -139,7 +139,6 @@ Tabs.TabShop:AddButton({
 Tabs.TabShop:AddButton({
     Title = "Soru [ $100.000 Beli]",
     Callback = function()
-        Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
     end
 })
