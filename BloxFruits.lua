@@ -151,7 +151,7 @@ local TradeBone = Tabs.TabMisc:AddToggle("TradeBone", {Title = "Trade Bone", Def
 
    spawn(function()
     pcall(function()
-        while wait(0.25) do
+        while wait(0.75) do
             if _G.RandomBoneFunction then    
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,1)
             end
