@@ -115,28 +115,28 @@ Tabs.TabShop:AddParagraph({
 Tabs.TabShop:AddButton({
     Title = "Sky Jump [ $10.000 Beli ]",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySkyJump")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
     end
 })
 
 Tabs.TabShop:AddButton({
     Title = "Buso Haki [ $25.000 Beli ]",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBusoHaki")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
     end
 })
 
 Tabs.TabShop:AddButton({
     Title = "Observation Haki [ $750.000 Beli ]",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyObservationHaki")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
     end
 })
 
 Tabs.TabShop:AddButton({
     Title = "Soru [ $100.000 Beli]",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySoru")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
     end
 })
 
