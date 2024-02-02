@@ -16,6 +16,7 @@ local Tabs = {
     TabShop = Window:AddTab({ Title = "Tab Shop", Icon = "" }),
     TabFarm = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
     TabMisc = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
+    TabTeleport = Window:AddTab({ Title = "Tab Teleport", Icon + "" }),
 }
 
 local Options = Fluent.Options
@@ -138,7 +139,34 @@ Tabs.TabShop:AddButton({
 Tabs.TabShop:AddButton({
     Title = "Soru [ $100.000 Beli]",
     Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
+        Callback = function()
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
+    end
+})
+
+Tab.TabTeleport:AddParagraph({
+    Title = "Teleport World",
+    Content = "Teleport World"
+})
+
+Tabs.TabTeleport:AddButton({
+    Title = "Old World",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
+    end
+})
+
+Tabs.TabTeleport:AddButton({
+    Title = "New World",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
+    end
+})
+
+Tabs.TabTeleport:AddButton({
+    Title = "Third World",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
     end
 })
 
